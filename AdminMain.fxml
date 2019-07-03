@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+//
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="394.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="254.0" prefHeight="17.0" prefWidth="175.0" text="Customer Management" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="254.0" prefHeight="20.0" prefWidth="175.0" text="Staff Management" textFill="#011111">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="341.0" layoutY="254.0" prefHeight="20.0" prefWidth="175.0" text="Menu Management" textFill="#000a01">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>       
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="254.0" prefHeight="20.0" prefWidth="175.0" text="Inventory Management" textFill="#0f1102">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Manage Customer" />
+      <Button layoutX="28.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Remove Customer" />
+      <Button layoutX="203.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Manage Staff" />
+      <Button layoutX="203.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Remove Staff" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="369.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Manage Menu" />
+      <Button layoutX="369.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Remove Menu" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="553.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Manage Inventory" />
+      <Button layoutX="553.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Remove Inventory" />
+      <Label layoutX="14.0" layoutY="14.0" text="Mars Restaurant">
+         <font>
+            <Font name="Kristen ITC" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#870b0b" />
+                  <Stop color="#ff9500" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="LogoutButton" layoutX="623.0" layoutY="14.0" mnemonicParsing="false" text="LOGOUT" />
+      <Label fx:id="welcomeUsername" layoutX="28.0" layoutY="167.0" prefHeight="17.0" prefWidth="236.0" />
+      <Label layoutX="483.0" layoutY="51.0" text="Reservations" textFill="#0a0a0a">
+         <font>
+            <Font name="Broadway" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="369.0" layoutY="66.0" prefHeight="186.0" prefWidth="318.0">
+        <content>
+          <AnchorPane fx:id="reservationList" minHeight="0.0" minWidth="0.0" prefHeight="184.0" prefWidth="304.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
